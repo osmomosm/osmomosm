@@ -1,0 +1,27 @@
+body{
+    background-color:darkcyan;
+    padding: 3%;
+    color: whitesmoke;
+}
+.red{
+    background-color: red;
+    padding: 4%;
+}
+.blue{
+    background-color: blue;
+    padding: 4%;
+}
+.whit{
+    background-color: whitesmoke;
+    color: black;
+}
+.bg-dark{
+position: absolute;
+width: 92%;
+margin: 1%;
+margin-left: 2%;
+
+}
+.col-lg-3 col-md-6 mb-4 mb-md-0{
+    width: 30%;
+}

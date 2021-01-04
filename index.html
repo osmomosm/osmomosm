@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>studentgradesystem</title>
+    <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.js">
+</head>
+<body>
+    <h1>Student Grade Calculator</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 red">
+          <h2>Your percentage is:</h2>
+          <h3 id="percentage"></h3>
+          <h2>Your grade is:</h2>
+          <h3 id="grade"></h3>
+        </div>
+        <div class="col-sm-8 blue">
+          <h1>Enter your marks</h1>
+          <form id="form" onsubmit="event.preventDefault(); validate();">
+            <div class="mb-3">
+              
+              <input type="value" class="form-control" placeholder="Maths" id="maths">
+             
+            </div>
+            <div class="mb-3">
+              
+              <input type="value" class="form-control" placeholder="Physics" id="Physics">
+            </div>
+            <div class="mb-3">
+              
+                <input type="value" class="form-control" placeholder="Chemistry" id="Chemistry">
+              </div>
+
+              <div class="mb-3">
+              
+                <input type="value" class="form-control" placeholder="English" id="English">
+              </div>
+            
+            <button type="submit" onclick="getmarks()" class="btn btn-primary">Submit</button>
+           
+              
+              <button type="reset" class="btn btn-danger">Reset</button>
+              
+            </form>
+            
+        </div>
+        
+      </div>
+      <div class="row">
+          <div class="col-sm-12 whit">
+              <h3 id="pass"></h3>
+          </div>
+
+      </div>
+    </div>
+    <div class="container-fluid bg-dark">
+      <!-- Footer -->
+<footer class="bg-dark text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Exam Details</h5>
+
+        <p>
+          Below are the subject links which contains solved question papers for your reference.
+          <br>ALL THE BEST FOR YOUR EXAMS.
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Subjects</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-light">Physics</a>
+          </li>
+          <li>
+            <a href="#!" class="text-light">Chemistry</a>
+          </li>
+          <li>
+            <a href="#!" class="text-light">Maths</a>
+          </li>
+          <li>
+            <a href="#!" class="text-light">English</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Question Papers</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-light">Physics</a>
+          </li>
+          <li>
+            <a href="#!" class="text-light">Chemistry</a>
+          </li>
+          <li>
+            <a href="#!" class="text-light">Maths</a>
+          </li>
+          <li>
+            <a href="#!" class="text-light">English</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright: osm_om.com
+    <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+    </div>
+
+
+
+
+    
+<!-- bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<!-- bootstrap -->
+<script src="main.js"></script>
+</body>
+</html>
